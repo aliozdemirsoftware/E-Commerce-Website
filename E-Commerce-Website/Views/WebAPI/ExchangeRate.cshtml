@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "ExchangeRate";
+    Layout = "~/Views/Shared/DefaultLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+
+        @*<span style="font-size:30px;">DOLAR SATIŞ KURU : @await Component.InvokeAsync("Exchange")</span>*@
+
+        <span style="font-size:30px;font-weight:bold;font-style:italic;color:black;">DOLAR KURU : @ViewBag.dolaralis &nbsp;&nbsp; @ViewBag.dolarsatis</span>
+        <hr /><hr />
+        <span style="font-size:30px;font-weight:bold;font-style:italic;color:black;">EURO KURU : @ViewBag.euroalis &nbsp;&nbsp; @ViewBag.eurosatis</span>
+
+    </div>
+</div>

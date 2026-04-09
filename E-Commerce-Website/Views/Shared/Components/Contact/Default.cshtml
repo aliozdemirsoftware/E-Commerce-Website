@@ -1,0 +1,48 @@
+﻿@model Setting
+
+<!-- footer top area start -->
+
+<section id="sp-bottom-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-lg-6">
+				<div class="sp-column ">
+					<div class="sp-module ">
+						<h3 class="sp-module-title"><span>İLETİŞİM</span></h3>
+						<div class="sp-module-content">
+							<div class="custom">
+								<div class="t-bottom-content">
+
+									@await Component.InvokeAsync("Address")
+
+									<p class="phone">
+										<em class="fa fa-phone"></em>
+										<span class="ft-content">@Model.Telephone</span>
+									</p>
+									<p class="email">
+										<em class="fa fa-envelope"></em>
+										<span class="ft-content">@Model.Email</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+<footer id="sp-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6">
+				<p>Bu Sitenin Tüm Hakları Saklıdır</p>
+			</div>
+			<div class="col-sm-6 col-md-6">
+				<div class="payment-logo">
+					<img src="/img/payment.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer top area end -->
